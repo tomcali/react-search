@@ -3,15 +3,15 @@ import {Col, Image} from 'react-bootstrap';
 import Section from '../section/section';
 import placeholder from './placeholder.gif';
 import './projects.css';
-import faker from 'faker';
+import faker from 'faker';  // used for development purposes
 
 export default class Projects extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
 			selectedProject: {
-				projectName: 'aklsdflaksfjd',
-				description: 'askljdfk;asf;ajs'
+				projectName: '',  // empty to be filled in later
+				description: '' // empty to be filled in later
 			},
 			projects: [
 				{
@@ -41,7 +41,15 @@ export default class Projects extends Component {
 				{
 					projectName: faker.name.title(),
 					description: faker.lorem.paragraphs()
-				}
+				},
+                {
+                    projectName: faker.name.title(),
+                    description: faker.lorem.paragraphs()
+                },
+                {
+                    projectName: faker.name.title(),
+                    description: faker.lorem.paragraphs()
+                }
 
 			]
 		}
@@ -73,7 +81,7 @@ export default class Projects extends Component {
 		return (
 			<div className='projects'>
 
-				<Section sectionTitle='Projects'>
+				<Section sectionTitle='Past Search Results'>
 					<Col xs={4}>
 							{this.renderProject()}
 					</Col>

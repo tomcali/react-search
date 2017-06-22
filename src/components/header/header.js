@@ -8,14 +8,14 @@ export default class Header extends Component {
 					<Navbar inverse collapseOnSelect>
 				    <Navbar.Header>
 				      <Navbar.Brand>
-				        <a href="#">My Portfolio</a>
+				        <a href="#">Web Search App</a>
 				      </Navbar.Brand>
 				      <Navbar.Toggle />
 				    </Navbar.Header>
 				    <Navbar.Collapse>
 				      <Nav pullRight>
-				        <NavItem href="#">About Me</NavItem>
-				        <NavItem href="#">Project</NavItem>
+				        <NavItem href="#"></NavItem> // nav item possible
+				        <NavItem href="#"></NavItem>  // nav item possible
 				      </Nav>
 				    </Navbar.Collapse>
 				  </Navbar>

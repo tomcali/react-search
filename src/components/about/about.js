@@ -6,9 +6,9 @@ export default class About extends Component{
 	render() {
 		return (
 			<div className='about'>
-				<Section sectionTitle='About Me'>
+				<Section sectionTitle='Enter your search request:'>
 					<Col xs={12}>
-						ealsdfk;sfjkldakls;dfjkasdjkfaskjdf
+						---
 					</Col>
 				</Section>
 			</div>
