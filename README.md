@@ -12,6 +12,9 @@ Search-on-Search, as we see it involves an intial search is similar to what we m
 # Reference Material
 We begin with a react start-up system that we built with Jonathan's help after the regular class meeting time on Saturday, June 17. Other souces to draw from include the book Pro MERN Stack by Vasan Subramanian (2017, http://www.apress.com/us/book/9781484226520), react-bootsrtap documentation (https://react-bootstrap.github.io/components.html), and the solution from the prior assignment (shown under the directory 0-mongo-base-solution). 
 
+# Repository
+https://github.com/tomcali/react-search.git
+
 # Technologies Used
 Here are the primary technologies or building blocks for the app:
 
@@ -20,7 +23,7 @@ Here are the primary technologies or building blocks for the app:
 * Node (foundation for server, npm sources)
 * Express for web server
 * cheerio for web scaping under the scripts directory
-* MongoDB document database 
+* (future?) MongoDB document database this is an uncertain component at this time. May be unnecessary given the plan for using Elasticsearch. 
 * (future) Elasticsearch for the search on search... this is the ultimate database for the information resource, not MongoDB.
 
 In other words, we are working on a MERN stack app.
@@ -35,3 +38,35 @@ The "search information store about" section awaits further development. In part
 The "past search results" section is constructed to show nine previous search results, arranged initially as a simple three-by-three grid. The thinking is to display closest matches in groups of nine. The current form of this has placeholder images and faker-facilitated text entries, a la the example developed by the special lecture on React development offered by Jonathan.
 
 As far as the assignment is concerned, we have demonstrated that we can lay out the stucture of a working React-based app, albeit an incomplete app at this point in time.
+
+# Deployment
+We utilized a tutorial at https://medium.freecodecamp.com/surge-vs-github-pages-deploying-a-create-react-app-project-c0ecbf317089
+
+This tutorial provided instructions for deploying our create-react-app app to GitHub.
+
+Executed this npm command to add to package.json
+
+npm install --save-dev gh-pages
+
+Added to the beginning of the package.json file:
+
+"homepage": "https://tomcali.github.io/react-search",
+
+Added the deploy command to package.json, specific to GitHub :
+
+"deploy": "npm run build&&gh-pages -d build"
+
+Backed up to GitHub again:
+git add .
+git commit -m 'ready for deployment'
+git push origin master
+
+Executed this npm command to deploy:
+
+npm run deploy
+
+This publishes to a gh-pages branch on the GitHub repository, creating the branch if none previously existed.
+
+The deployed application should then be available via
+
+https://tomcali.github.io/react-search
