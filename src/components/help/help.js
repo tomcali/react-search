@@ -42,12 +42,12 @@ const Help = React.createClass({
           bsSize="large"
           onClick={this.open}
         >
-          Search Utility Help
+          About Search-on-Search
         </Button>
         <p></p>
         <Modal show={this.state.showModal} onHide={this.close}>
           <Modal.Header closeButton>
-            <Modal.Title>Search Utility Help</Modal.Title>
+            <Modal.Title>About Search-on-Search</Modal.Title>
           </Modal.Header>
           <Modal.Body>
             <h4>Save time in searching the web by . . .</h4>
@@ -58,6 +58,9 @@ const Help = React.createClass({
 
             <h4>Storing and annotating search results</h4>
             <p>If you store and <OverlayTrigger overlay={annotate}><a href="#">annotate</a></OverlayTrigger> search results, then they will be available for future reference.</p>
+
+            <h4>Search-on-search is the key to productivity</h4>
+            <p>The annotated store of search results is available for your future reference. This is what turns hours of seaching the web into a personal information resource.</p>
 
             <hr />
 
