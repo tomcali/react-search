@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Col, Image} from 'react-bootstrap';
 import Section from '../section/section';
-import placeholder from './placeholder.gif';
+import placeholder from './placeholder.gif';  // used for development tile rendering
 import './projects.css';
 import faker from 'faker';  // used for development purposes
 
@@ -85,7 +85,7 @@ export default class Projects extends Component {
 					<Col xs={4}>
 							{this.renderProject()}
 					</Col>
-					<Col xs={6}>
+					<Col xs={8}>
 						{this.renderTiles()}
 					</Col>
 				</Section>
